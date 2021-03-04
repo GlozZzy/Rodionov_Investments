@@ -78,7 +78,6 @@ namespace Rodionov_Investments
         private void button_buy_pou_Click(object sender, EventArgs e)
         {
             label_err.Visible = false;
-            button_bal.Visible = false;
             if (bal >= pound.value) { bal -= pound.value; count_pound++; }
             else { label_err.Visible = true; button_bal.Visible = true; }
             label_ru.Text = "" + bal;
